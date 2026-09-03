@@ -391,10 +391,70 @@ h5-narrowband-candidate-analysis/
     ├── 03_time_frequency_features.ipynb
     ├── 04_ground_truth_labels.ipynb
     └── 05_ml_feasibility.ipynb
+```
 
 ## Reproducing the Analysis
 
-[Dependencies + obtaining data + running notebooks]
+### 1. Clone the Repository
+
+```bash
+git clone <repository-url>
+cd h5-narrowband-candidate-analysis
+```
+
+### 2. Create a Python Environment
+
+Creating a dedicated virtual environment is recommended:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+```
+
+On Windows:
+
+```bash
+.venv\Scripts\activate
+```
+
+### 3. Install Dependencies
+
+Install the required Python packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+The primary dependencies are NumPy, pandas, Matplotlib, SciPy, and Blimpy.
+
+### 4. Obtain the Observation Data
+
+The raw HDF5 observation products are not included in this repository because
+of their size. Source information, exact filenames, observation metadata, and
+download instructions are provided in [`data/README.md`](data/README.md).
+
+After downloading the observation products, create a local `data/raw/`
+directory and place the HDF5 files inside it. This directory is excluded from
+version control.
+
+The notebooks reference the observations using relative paths of the form:
+
+```text
+../data/raw/<observation-file>.h5
+```
+
+### 5. Run the Analysis
+
+The notebooks follow the progression of the analysis and should be reviewed or
+run in numerical order:
+
+```text
+01_explore_observation.ipynb
+02_build_candidates.ipynb
+03_time_frequency_features.ipynb
+04_high_resolution_candidate_analysis.ipynb
+05_ml_feasibility.ipynb
+```
 
 ## Limitations
 
