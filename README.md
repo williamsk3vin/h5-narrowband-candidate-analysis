@@ -19,7 +19,6 @@ investigating potential technosignature candidates.
 ## Analysis
 
 ### Phase 1 — Observation Exploration and Candidate Detection
-...
 
 The first stage of the project focused on understanding the structure of the
 observation before attempting candidate detection. I inspected the dimensions
@@ -383,13 +382,14 @@ do not establish its physical origin.
 h5-narrowband-candidate-analysis/
 ├── README.md
 ├── requirements.txt
+├── .gitignore
 ├── data/
 │   └── README.md
 └── notebooks/
     ├── 01_explore_observation.ipynb
     ├── 02_build_candidates.ipynb
     ├── 03_time_frequency_features.ipynb
-    ├── 04_ground_truth_labels.ipynb
+    ├── 04_high_resolution_candidate_analysis.ipynb
     └── 05_ml_feasibility.ipynb
 ```
 
