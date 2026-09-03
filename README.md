@@ -458,8 +458,53 @@ run in numerical order:
 
 ## Limitations
 
-[Scientific limitations and what cannot be concluded]
+This analysis identifies and characterizes statistically unusual structure in
+the observation, but it cannot determine the physical origin of the detected
+candidate. Exceeding the selected statistical threshold establishes that the
+feature is unusual relative to its reference background; it does not establish
+why the feature is present.
+
+The analysis therefore cannot determine whether the candidate originates from
+radio-frequency interference (RFI), instrumental effects, an astrophysical
+source, or another cause. The observed persistence, spectral structure,
+frequency variation, and approximately 500 Hz comb-like spacing provide
+descriptive characteristics of the feature but are not sufficient to assign a
+physical origin.
+
+The project is also based on a limited candidate population from a single
+observation. This prevents reliable ground-truth labeling and limits the
+ability to determine whether the observed candidate characteristics are unique
+or representative of broader signal populations.
+
+For these reasons, the candidate should be interpreted as a statistically
+unusual and structured spectral feature requiring further investigation, not
+as evidence of a technosignature or extraterrestrial origin.
 
 ## Future Work
 
-[What would logically come next]
+The next stage of this project would extend the analysis to additional
+observations of the same region acquired on different dates. Repeated
+observations would make it possible to determine whether the candidate
+reappears and whether its spectral and temporal characteristics remain
+consistent across observations.
+
+Particular attention would be given to the approximately 500 Hz comb-like
+structure, its frequency location, persistence, intermittency, and frequency
+evolution. Comparing these properties across independent observations could
+help distinguish repeatable structure from transient or observation-specific
+behavior.
+
+Future analysis should also incorporate additional information needed to
+investigate possible signal origins, including RFI assessment and observational
+context. Persistence or disappearance alone would not establish whether a
+feature is astrophysical, instrumental, terrestrial, or satellite-related, but
+repeated observations could provide evidence for evaluating these competing
+explanations.
+
+As additional observations are processed, the reusable candidate-detection
+pipeline could also be used to construct a substantially larger population of
+characterized candidates. This would make it possible to compare signal
+morphologies across observations and eventually revisit unsupervised learning
+for candidate grouping and anomaly prioritization. If reliable ground-truth
+labels can be established independently, supervised classification could also
+be reconsidered.
